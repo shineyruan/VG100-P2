@@ -1,0 +1,1 @@
+echo WScript.sleep 2000 > sleep2000.vbs
