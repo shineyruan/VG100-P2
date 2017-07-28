@@ -46,8 +46,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	float a, b, c, a1, b1, c1;
 	float al1, al2, be1, be2, th1, th2;
 	float al, be, th;
-	float x1, x2, y1, y2;
-	bool initial = false;
+	float x1, x2, y1, y2;//drag需要两个坐标，drag from (x1,y1) to (x2,y2)
+	bool initial = false;//用来判断第一次输入的值被记录，第一次之后就相当于斐波那契数列。。。
+	//把前一次得到的x2,y2作为下一次的x1,y1
 	while (1)
 	{
 		usLength = CollectUARTData(ulComNo, chrBuffer);
@@ -92,10 +93,11 @@ int _tmain(int argc, _TCHAR* argv[])
 
 			if (x2 > 1550) x2 = 1550;
 			if (y2 > 850) y2 = 850;
-
+			//下面这简单的一行就是滤波算法。。。
 			if ((x1 - x2)*(x1 - x2) + (y1 - y2)* (y1 - y2) > 100000)
 				continue;
 			//SetCursorPos(x, y);
+			//下面还是把读取的坐标传入文件给 drag.exe 读
 			ofstream oFilex1, oFiley1, oFilex2, oFiley2;
 			oFilex1.open("x1.txt");
 			oFiley1.open("y1.txt");
@@ -118,10 +120,10 @@ int _tmain(int argc, _TCHAR* argv[])
 }
 
 //printf("Time:20%d-%d-%d %d:%d:%.3f\r\n", (short)JY901.stcTime.ucYear, (short)JY901.stcTime.ucMonth,
-//	(short)JY901.stcTime.ucDay, (short)JY901.stcTime.ucHour, (short)JY901.stcTime.ucMinute, 
+//	(short)JY901.stcTime.ucDay, (short)JY901.stcTime.ucHour, (short)JY901.stcTime.ucMinute,
 //	(float)JY901.stcTime.ucSecond + (float)JY901.stcTime.usMiliSecond / 1000);
 
-//printf("Acc:%.3f %.3f %.3f\r\n", (float)JY901.stcAcc.a[0] / 32768 * 16, (float)JY901.stcAcc.a[1] / 32768 * 16, 
+//printf("Acc:%.3f %.3f %.3f\r\n", (float)JY901.stcAcc.a[0] / 32768 * 16, (float)JY901.stcAcc.a[1] / 32768 * 16,
 //	(float)JY901.stcAcc.a[2] / 32768 * 16);
 
 //printf("Gyro:%.3f %.3f %.3f\r\n", (float)JY901.stcGyro.w[0] / 32768 * 2000, (float)JY901.stcGyro.w[1] / 32768 * 2000,
