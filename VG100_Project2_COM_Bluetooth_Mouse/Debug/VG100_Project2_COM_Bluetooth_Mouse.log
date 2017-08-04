@@ -1,0 +1,11 @@
+﻿  slide-UARTTest.cpp
+c:\users\admin\documents\visual studio 2017\projects\vg100_project2_com_bluetooth_mouse\vg100_project2_com_bluetooth_mouse\slide-uarttest.cpp(230): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+c:\users\admin\documents\visual studio 2017\projects\vg100_project2_com_bluetooth_mouse\vg100_project2_com_bluetooth_mouse\slide-uarttest.cpp(95): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明
+c:\users\admin\documents\visual studio 2017\projects\vg100_project2_com_bluetooth_mouse\vg100_project2_com_bluetooth_mouse\slide-uarttest.cpp(97): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明
+c:\users\admin\documents\visual studio 2017\projects\vg100_project2_com_bluetooth_mouse\vg100_project2_com_bluetooth_mouse\slide-uarttest.cpp(99): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明
+c:\users\admin\documents\visual studio 2017\projects\vg100_project2_com_bluetooth_mouse\vg100_project2_com_bluetooth_mouse\slide-uarttest.cpp(64): warning C4715: “angle”: 不是所有的控件路径都返回值
+  VG100_Project2_COM_Bluetooth_Mouse.vcxproj -> C:\Users\Admin\documents\visual studio 2017\Projects\VG100_Project2_COM_Bluetooth_Mouse\Debug\VG100_Project2_COM_Bluetooth_Mouse.exe
+  VG100_Project2_COM_Bluetooth_Mouse.vcxproj -> C:\Users\Admin\documents\visual studio 2017\Projects\VG100_Project2_COM_Bluetooth_Mouse\Debug\VG100_Project2_COM_Bluetooth_Mouse.pdb (Partial PDB)
