@@ -30,7 +30,7 @@
     <ClCompile Include="drag-UARTTest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="slide-UARTTest.cpp">
+    <ClCompile Include="slideMove-UARTTest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

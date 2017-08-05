@@ -142,7 +142,7 @@
     <ClCompile Include="Com.cpp" />
     <ClCompile Include="drag-UARTTest.cpp" />
     <ClCompile Include="JY901.cpp" />
-    <ClCompile Include="slide-UARTTest.cpp" />
+    <ClCompile Include="slideMove-UARTTest.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="UARTTest.cpp" />
   </ItemGroup>
